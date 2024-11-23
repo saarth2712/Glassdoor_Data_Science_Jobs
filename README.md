@@ -1,6 +1,6 @@
 # Glassdoor Data Science Jobs
 
-This pro
+This Python script demonstrates a data cleaning for a dataset containing data science job listings from Glassdoor. It involves several steps, including handling missing values, cleaning columns, converting data types, and applying various transformations to the dataset for further analysis.
 
 ## Getting Started
 
@@ -8,33 +8,21 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-For this project you will require packages like pandas, re, and numpy
-```
-import pandas as pd
-import re
-import numpy as np
-```
+To run this script, ensure the following libraries are installed:
+1. pandas
+2. numpy
+3. re
 
-### Installing
+### Data Overview
+The dataset contains multiple columns related to job listings, including but not limited to:
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-
-
+- **Salary Estimate**: [Salary Estimate for the job position]
+- **Job Description**: [Textual description of the job role]
+- **Company Name**: [The company offering the job]
+- **Revenue**: [Revenue of the company]
+- **Competitors**: [List of competitors for the company]
+- **Location**: [The location where the job is based]
+- 
 ### Break down into end to end tests
 
 Explain what these tests test and why
