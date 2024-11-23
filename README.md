@@ -16,39 +16,47 @@ To run this script, ensure the following libraries are installed:
 ### Data Overview
 The dataset contains multiple columns related to job listings, including but not limited to:
 
-- **Salary Estimate**: [Salary Estimate for the job position]
-- **Job Description**: [Textual description of the job role]
-- **Company Name**: [The company offering the job]
-- **Revenue**: [Revenue of the company]
-- **Competitors**: [List of competitors for the company]
-- **Location**: [The location where the job is based]
-- 
-### Break down into end to end tests
+- **Salary Estimate**: Salary Estimate for the job position
+- **Job Description**: Textual description of the job role
+- **Company Name**: The company offering the job
+- **Revenue**: Revenue of the company
+- **Competitors**: List of competitors for the company
+- **Location**: The location where the job is based
+  
+# Data Cleaning and Preprocessing Pipeline
 
-Explain what these tests test and why
+## Steps Involved
 
-```
-Give an example
-```
+### 1. Drop Missing Values and Duplicates
+- Use `df.dropna()` to remove rows with missing values.
+- Use `df.drop_duplicates()` to eliminate duplicate rows.
 
-### And coding style tests
+### 2. Process Salary Estimates
+- Parse the `Salary Estimate` column to extract numerical ranges (e.g., `50K-60K`).
+- Compute the average salary and store it in the `Average Salary` column.
 
-Explain what these tests test and why
+### 3. Clean Job Descriptions
+- Remove extra newlines and whitespace from the `Job Description` column.
 
-```
-Give an example
-```
+### 4. Standardize Company Names
+- Strip non-alphabetical characters, digits, and extra spaces from `Company Name`.
 
-## Deployment
+### 5. Remove Negative Values
+- Filter out rows with negative values in numerical columns.
 
-Add additional notes about how to deploy this on a live system
+### 6. Clean Revenue Column
+- Remove unwanted text like ` (USD)` from the `Revenue` column.
+
+### 7. Handle Missing Competitors Data
+- Replace `-1` in the `Competitors` column with `NaN` to mark missing values.
+
+### 8. Extract State Information
+- Create a `State` column by extracting the last two characters from the `Location` column.
 
 
 ## Authors
 
-* **Saarth Soparkar** - *Initial work* 
+* **Saarth Soparkar** 
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
