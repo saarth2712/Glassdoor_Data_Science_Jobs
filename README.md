@@ -6,14 +6,14 @@ This Python script demonstrates a data cleaning for a dataset containing data sc
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+## Prerequisites
 
 To run this script, ensure the following libraries are installed:
 1. pandas
 2. numpy
 3. re
 
-### Data Overview
+## Data Overview
 The dataset contains multiple columns related to job listings, including but not limited to:
 
 - **Salary Estimate**: Salary Estimate for the job position
@@ -23,7 +23,6 @@ The dataset contains multiple columns related to job listings, including but not
 - **Competitors**: List of competitors for the company
 - **Location**: The location where the job is based
   
-# Data Cleaning and Preprocessing Pipeline
 
 ## Steps Involved
 
