@@ -52,6 +52,10 @@ The dataset contains multiple columns related to job listings, including but not
 ### 8. Extract State Information
 - Create a `State` column by extracting the last two characters from the `Location` column.
 
+## Conclusion
+
+This script performs essential data-cleaning tasks to prepare the dataset for further analysis or modeling. You can easily adapt this pipeline to fit other datasets or adjust the functions to handle specific edge cases.
+
 
 ## Authors
 
