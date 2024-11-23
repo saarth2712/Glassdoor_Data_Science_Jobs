@@ -1,6 +1,6 @@
 # Glassdoor Data Science Jobs
 
-One Paragraph of project description goes here
+This pro
 
 ## Getting Started
 
